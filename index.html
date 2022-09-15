@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&display=swap" rel="stylesheet"> 
+    <title>rock paper scissors</title>
+     
+</head>
+<body>
+    <!--header section-->
+
+    <div id="container">
+          <div class="first-half">
+            <div class="player-score"><h3 class="player-name-heading">player</h3><span id="player-current-score" >0</span></div>
+            <h1 class="heading">ROCK<br>PAPER<br>SCISSORS</h1>
+             <div class="computer-score"><h3 class="computer-name-heading">computer</h3><span id="computer-current-score" >0</span></div>
+          </div>
+
+    <!--This is the middle section of game which includes the main part of the game.-->
+
+            <div class="playerName">
+                <h2 class="player">Player</h2>
+                <h2 class="computer">Computer</h2>
+            </div>
+            <div id="rock-paper-scissors">
+                <img id=player-choice src="humanrock.png"   alt="">
+                <div id="message-box"><span id="message"></span></div>
+                <img id=computer-choice src="rock.png"  alt="">
+            </div>
+
+            <div class="rps-button">
+                <button id="rock" value="rock" onclick="main(this)">rock</button>
+                <button id="paper" value="paper" onclick="main(this)">paper</button>
+                <button id="scissors" value="scissors" onclick="main(this)">scissors</button>
+            </div>
+            <div class="reset-button"><button class="reset">reset</button></div>
+    </div>
+
+    
+    <!--This is the bottom section which includes scoreboard of the game -->
+
+          
+    
+        <script src="script.js"></script>      
+              
+             
+</body>
+</html>

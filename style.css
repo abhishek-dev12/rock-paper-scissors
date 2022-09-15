@@ -1,0 +1,756 @@
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    color:#F5003E;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #F51B4F;
+}
+
+/*header section */
+
+#container{
+    width:50%;
+    margin:2rem auto;
+    background-color: #140941;
+    height:90vh; 
+    border-radius: 15px ;  
+}
+
+ .first-half{
+    width:70%;
+    height:15vh;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    border-radius: 10px;
+    border:2px solid  #F51B4F;
+    position: relative;
+    top:2vh;
+}
+
+/*h1 heading*/
+
+.heading{
+    font-size: 1.3em;
+    margin-top: 0.5rem;
+    margin-left:1rem;
+    width:17vh;
+    display: grid;
+    place-items: center;
+    height:12vh;
+    border-radius: 10px;
+    line-height: 0.9;
+    justify-content: flex-start;
+    color:#F51B4F;
+}
+
+
+
+.computer-score{
+    margin-top:.8rem;
+    margin-right:1rem;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid  #F51B4F; 
+    width:15vh;
+    height:10vh;
+}
+
+.computer-name-heading{
+    margin-top:0.2rem;
+    font-size: 1.1rem;
+}
+
+#computer-current-score{
+    font-size: 1.5em;
+    position:relative;
+    top:0.5rem;
+}
+
+.player-score{
+    margin-top:0.8rem;
+    margin-left:1rem;
+    text-align: center;
+    border-radius: 10px;
+    border:2px solid  #F51B4F;
+    width:15vh;
+    height:10vh;
+}
+
+.player-name-heading{
+    font-size: 1.1rem;
+    margin-top:0.2rem;
+}
+
+#player-current-score{
+    font-size: 1.5em;
+    position:relative;
+    top:0.5rem;
+}
+
+/*h2 heading for player name and computer*/
+
+.playerName{
+    width:65%;
+    margin:2rem auto;
+    height:5vh;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+}
+
+.playerName h2{
+      width:20vh;
+      height:5vh; 
+      font-size: 1.3em;
+      border:2px solid rgb(214, 18, 18);
+      border-radius: 5px;
+      text-align: center;
+      
+}
+
+/*rock paper scissors*/
+
+#rock-paper-scissors{
+    width:75%;
+    height:30vh;
+    margin:2rem auto;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+   
+}
+
+img{
+    width:100%;
+}
+
+/*rock paper scissors button*/
+
+.rps-button{
+    width:65%;
+    margin:0 auto;
+    height:8vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.rps-button button{
+    width:15vh;
+    height:8vh;
+    background: none;
+    border:2px solid  #F51B4F;   
+    text-decoration: none;
+    font-size: 1.3em;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.rps-button button:hover{
+    background-color: black;
+    border:1px solid white;
+    color:white;
+}
+
+.reset-button{
+    width:65%;
+    margin:1rem auto;
+    height:5vh;
+    
+}
+
+.reset-button button{
+    width:100%;
+    height:5vh;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    border:2px solid  #F51B4F;
+    cursor: pointer;
+    background: none;
+}
+
+.reset-button button:hover{
+    background-color: black;
+    color:white;
+    border:2px solid white;
+}
+#message-box{
+    width:50vh;
+    height:30vh;
+    display: grid;
+    place-items: center;   
+}
+
+#message{
+    
+    color:white;
+    font-size: 2rem;
+}
+
+
+@media (max-width: 850px) {
+    #container{
+        width:70%;
+        margin:2rem auto;
+        background-color: #140941;
+        height:90vh; 
+        border-radius: 15px ;  
+    }
+
+    .first-half{
+        width:80%;
+        height:13vh;
+}
+    .heading{
+        margin-top:.5rem;
+        width:16vh;
+        height:10vh;
+        font-size: 1.1rem;
+    }
+    
+    .computer-score{
+        margin-top:.9rem;
+        margin-right:.5rem;
+        width:13vh;
+        height:9vh;
+    }
+    
+    .computer-name-heading{
+        font-size:.9em;
+    }
+    #computer-current-score{
+        font-size:1.3rem;
+        position:relative;
+        top:0.4rem;
+    }
+
+    .player-name-heading{
+        font-size:.9em;
+    }
+
+    .player-score{
+        margin-top:.9rem;
+        margin-right:.3rem;
+        width:13vh;
+        height:9vh;
+    }
+
+    #player-current-score{
+        font-size:1.3rem;
+        position:relative;
+        top:0.4rem;
+    }
+
+    .playerName{
+        width:70%;
+        margin:2rem auto;
+        height:5vh;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+    
+    .playerName h2{
+          width:15vh;
+          height:4vh; 
+          font-size: 1.1em;
+          border:2px solid #F51B4F;
+          border-radius: 5px;
+          text-align: center;
+          
+    }
+
+    #rock-paper-scissors{
+        width:80%;
+        height:20vh;
+        margin:1rem auto;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-evenly;
+       
+}
+    
+    
+
+    #message-box{
+        width:20vh;
+        height:20vh;
+     }
+
+     #message{
+        font-size: 1.5rem;
+        text-align: center;
+     }
+    .rps-button{
+        width:70%;
+        margin:2rem auto;
+        height:8vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+    
+    .rps-button button{
+        width:13vh;
+        height:6vh;
+        background:none;
+        color: #F51B4F;
+        text-decoration: none;
+        font-size: 1.1em;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 5px;
+        border:2px solid  #F51B4F;
+        cursor: pointer;
+    }
+
+    .reset-button{
+        width:60%;
+        margin:auto;
+        height:5vh;
+        
+    }
+    
+    .reset-button button{
+        width:100%;
+        height:5vh;
+        background:none;
+        color: #F51B4F;
+        text-decoration: none;
+        font-size: 1.3em;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 5px;
+        border:2px solid  #F51B4F;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 1000px){
+    #container{
+        width:50%;
+        margin:2rem auto;
+        background-color: #140941;
+        height:90vh; 
+        border-radius: 15px ;  
+    }
+
+    .first-half{
+        width:80%;
+        height:13vh;
+}
+    .heading{
+        margin-top:.5rem;
+        width:16vh;
+        height:10vh;
+        font-size: 1.1rem;
+    }
+    
+    .computer-score{
+        margin-top:.9rem;
+        margin-right:.5rem;
+        width:13vh;
+        height:9vh;
+    }
+    
+    .computer-name-heading{
+        font-size:.9em;
+    }
+    #computer-current-score{
+        font-size:1.3rem;
+        position:relative;
+        top:0.4rem;
+    }
+
+    .player-name-heading{
+        font-size:.9em;
+    }
+
+    .player-score{
+        margin-top:.9rem;
+        margin-right:.3rem;
+        width:13vh;
+        height:9vh;
+    }
+
+    #player-current-score{
+        font-size:1.3rem;
+        position:relative;
+        top:0.4rem;
+    }
+
+    .playerName{
+        width:70%;
+        margin:2rem auto;
+        height:5vh;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+    
+    .playerName h2{
+          width:15vh;
+          height:4vh; 
+          font-size: 1.1em;
+          border:2px solid #F51B4F;
+          border-radius: 5px;
+          text-align: center;
+          
+    }
+
+    #rock-paper-scissors{
+        width:80%;
+        height:20vh;
+        margin:1rem auto;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-evenly;
+       
+}
+    
+    
+
+    #message-box{
+        width:20vh;
+        height:20vh;
+     }
+
+     #message{
+        font-size: 1.5rem;
+        text-align: center;
+     }
+    .rps-button{
+        width:70%;
+        margin:0 auto;
+        height:6vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+        
+    }
+    
+    .rps-button button{
+        width:13vh;
+        height:6vh;
+        background:none;
+        color: #F51B4F;
+        text-decoration: none;
+        font-size: 1.1em;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 5px;
+        border:2px solid  #F51B4F;
+        cursor: pointer;
+    }
+
+    .reset-button{
+        width:60%;
+        margin:1rem auto;
+        height:5vh;
+        
+    }
+    
+    .reset-button button{
+        width:100%;
+        height:5vh;
+        background:none;
+        color: #F51B4F;
+        text-decoration: none;
+        font-size: 1.3em;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 5px;
+        border:2px solid  #F51B4F;
+        cursor: pointer;
+        
+    }
+}
+
+@media (max-width: 750px){
+    #container{
+        width:80%;
+        margin:2rem auto;
+        background-color: #140941;
+        height:90vh; 
+        border-radius: 15px ;  
+    }
+
+    .first-half{
+        width:80%;
+        height:13vh;
+}
+    .heading{
+        margin-top:.5rem;
+        width:16vh;
+        height:10vh;
+        font-size: 1.1rem;
+    }
+    
+    .computer-score{
+        margin-top:.9rem;
+        margin-right:.5rem;
+        width:13vh;
+        height:9vh;
+    }
+    
+    .computer-name-heading{
+        font-size:.9em;
+    }
+    #computer-current-score{
+        font-size:1.3rem;
+        position:relative;
+        top:0.4rem;
+    }
+
+    .player-name-heading{
+        font-size:.9em;
+    }
+
+    .player-score{
+        margin-top:.9rem;
+        margin-right:.3rem;
+        width:13vh;
+        height:9vh;
+    }
+
+    #player-current-score{
+        font-size:1.3rem;
+        position:relative;
+        top:0.4rem;
+    }
+
+    .playerName{
+        width:70%;
+        margin:2rem auto;
+        height:5vh;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+    
+    .playerName h2{
+          width:15vh;
+          height:4vh; 
+          font-size: 1.1em;
+          border:2px solid #F51B4F;
+          border-radius: 5px;
+          text-align: center;
+          
+    }
+
+    #rock-paper-scissors{
+        width:80%;
+        height:20vh;
+        margin:1rem auto;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-evenly;
+       
+}
+    
+    
+
+    #message-box{
+        width:20vh;
+        height:20vh;
+     }
+
+     #message{
+        font-size: 1.5rem;
+        text-align: center;
+     }
+    .rps-button{
+        width:65%;
+        margin:1rem auto;
+        height:8vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+    
+    .rps-button button{
+        width:13vh;
+        height:6vh;
+        background:none;
+        color: #F51B4F;
+        text-decoration: none;
+        font-size: 1.1em;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 5px;
+        border:2px solid  #F51B4F;
+        cursor: pointer;
+    }
+
+    .reset-button{
+        width:66%;
+        margin:0 auto;
+        height:5vh;
+        
+    }
+    
+    .reset-button button{
+        width:100%;
+        height:5vh;
+        background:none;
+        color: #F51B4F;
+        text-decoration: none;
+        font-size: 1.3em;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 5px;
+        border:2px solid  #F51B4F;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 600px){
+    #container{
+        width:80%;
+        margin:2rem auto;
+        background-color: #140941;
+        height:90vh; 
+        border-radius: 15px ;  
+    }
+
+    .first-half{
+        width:90%;
+        height:13vh;
+}
+    .heading{
+        margin-top:.5rem;
+        width:16vh;
+        height:10vh;
+        font-size: 1.1rem;
+    }
+    
+    .computer-score{
+        margin-top:.9rem;
+        margin-right:.5rem;
+        width:13vh;
+        height:9vh;
+    }
+    
+    .computer-name-heading{
+        font-size:.9em;
+    }
+    #computer-current-score{
+        font-size:1.3rem;
+        position:relative;
+        top:0.4rem;
+    }
+
+    .player-name-heading{
+        font-size:.9em;
+    }
+
+    .player-score{
+        margin-top:.9rem;
+        margin-right:.3rem;
+        width:13vh;
+        height:9vh;
+    }
+
+    #player-current-score{
+        font-size:1.3rem;
+        position:relative;
+        top:0.4rem;
+    }
+
+    .playerName{
+        width:80%;
+        margin:2rem auto;
+        height:5vh;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+    
+    .playerName h2{
+          width:15vh;
+          height:4vh; 
+          font-size: 1.1em;
+          border:2px solid #F51B4F;
+          border-radius: 5px;
+          text-align: center;
+          
+    }
+
+    #rock-paper-scissors{
+        width:80%;
+        height:20vh;
+        margin:1rem auto;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-evenly;
+       
+}
+    
+    
+
+    #message-box{
+        width:20vh;
+        height:20vh;
+     }
+
+     #message{
+        font-size: 1.5rem;
+        text-align: center;
+     }
+    .rps-button{
+        width:80%;
+        margin:1rem auto;
+        height:6vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+    
+    .rps-button button{
+        width:13vh;
+        height:6vh;
+        background:none;
+        color: #F51B4F;
+        text-decoration: none;
+        font-size: 1.1em;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 5px;
+        border:2px solid  #F51B4F;
+        cursor: pointer;
+    }
+
+    .reset-button{
+        width:75%;
+        margin:auto;
+        height:5vh;
+        
+    }
+    
+    .reset-button button{
+        width:100%;
+        height:5vh;
+        background:none;
+        color: #F51B4F;
+        text-decoration: none;
+        font-size: 1.3em;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 5px;
+        border:2px solid  #F51B4F;
+        cursor: pointer;
+    }
+}
